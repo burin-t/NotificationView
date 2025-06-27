@@ -182,7 +182,7 @@ class NotificationBannerView: UIView {
         self.containerView.addConstraints([
             NSLayoutConstraint(item: self.containerView, attribute: .leading, relatedBy: .equal, toItem: self.headerView, attribute: .leading, multiplier: 1, constant: 0),
             NSLayoutConstraint(item: self.containerView, attribute: .trailing, relatedBy: .equal, toItem: self.headerView, attribute: .trailing, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: self.containerView, attribute: .top, relatedBy: .equal, toItem: self.headerView, attribute: .top, multiplier: 1, constant: 8)
+            NSLayoutConstraint(item: self.containerView, attribute: .top, relatedBy: .equal, toItem: self.headerView, attribute: .top, multiplier: 1, constant: 0)
         ])
         
         self.headerView.addConstraints([
@@ -192,7 +192,7 @@ class NotificationBannerView: UIView {
         // textContainer
         
         self.containerView.addConstraints([
-            NSLayoutConstraint(item: self.headerView, attribute: .bottom, relatedBy: .equal, toItem: self.textContainerView, attribute: .top, multiplier: 1, constant: -8),//.priority(900),
+            NSLayoutConstraint(item: self.headerView, attribute: .bottom, relatedBy: .equal, toItem: self.textContainerView, attribute: .top, multiplier: 1, constant: 8),//.priority(900),
             NSLayoutConstraint(item: self.containerView, attribute: .leading, relatedBy: .equal, toItem: self.textContainerView, attribute: .leading, multiplier: 1, constant: -12),
             NSLayoutConstraint(item: self.containerView, attribute: .trailing, relatedBy: .equal, toItem: self.textContainerView, attribute: .trailing, multiplier: 1, constant: 12)
         ])
