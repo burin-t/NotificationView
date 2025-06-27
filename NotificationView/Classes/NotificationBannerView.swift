@@ -173,7 +173,7 @@ class NotificationBannerView: UIView {
         self.addConstraints([
             NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: self.containerView, attribute: .leading, multiplier: 1, constant: -2),
             NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: self.containerView, attribute: .trailing, multiplier: 1, constant: 2),
-            NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: self.containerView, attribute: .top, multiplier: 1, constant: -2).priority(900),
+            NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: self.containerView, attribute: .top, multiplier: 1, constant: 6).priority(900),
             NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: self.containerView, attribute: .bottom, multiplier: 1, constant: 2).priority(900)
         ])
         
